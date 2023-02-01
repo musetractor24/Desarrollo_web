@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang= "es"> 
+	<head>
+		<meta charset="utf-8">
+		<link href="..\css\primera_pagina.css" rel="stylesheet">
+		<title> Claro q' YES </title>
+		<link href="../images/colorpicker2000.png" rel= "icon" type= "image/x-icon">
+		<script>
+			function redirWiki() {
+				alert("Redireccionando a la Wikipedia");
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>This is a Heading</h1>  <!--headings-->
+		<a style="color:#000000; font-size:30px; text-decoration:none;" href="#parrafon" >Saltar pal parrafón</a> <br><br>
+		
+		<button onclick="document.location='../assets/html-css-reference.pdf'" title="Botoncito lindo">
+			Documentacion <abbr title="HyperText Markup Language">HTML</abbr> y <abbr title="Cascading Style Sheets">CSS</abbr>
+		</button>
+
+		<p style= "color: green;" title= " un parrafon en verde"> This is a paragraph.</p>  <!--parrafos-->
+		
+		<a href="http://cimsp/" target= "_blank" title="CIM's official website"> <!--nueva pestaña--> Link a la pagina del <abbr title = "Centro de Inmunologia Molecular"> CIM </abbr> </a>  <!--enlaces-->
+		
+		<br><br>
+		
+		<a href="https://es.wikipedia.org/wiki/%C3%81tomo" target="_blank" onclick="redirWiki()">
+			<img src="../images/imagen-de-un-atomo_952cc086_230112124807_1280x988.jpg" alt="Atomo" title="Foto de un Atomo" width="510" >
+		</a>
+		
+		<hr>   <!--rayita-->
+
+		<pre>   <!--texto con formato predefinido-->
+My Bonnie lies over the ocean.
+
+My Bonnie lies over the sea.
+
+My Bonnie lies over the ocean.
+
+Oh, bring back my Bonnie to me.
+		</pre>
+
+		<form>
+			<input type= "search" > 
+			<input type= "submit" > 
+		</form>
+		
+		<p style= "text-align:center; color:green;  border:25px solid blue; font-size: 100px; background-color:rgba(255, 99, 71, 0.8); font-family:chiller;" id="parrafon">  <!--styles & formatting-->
+			<img src="../images/Rotating_earth_(large).gif" alt="earth" title="earth girando" height="116px" style= "float: right">
+			<i><b> el parrafón verde </b></i>
+		</p>
+		
+		<img src= "../images/losprotegidos-t.jpg" alt= "los protegidos" usemap= "#protegidos" width="100%">
+		
+		<map name= "protegidos" >
+			<area shape= "rect" coords= "438,1,724,290" href=" https://es.wikipedia.org/wiki/Antonio_Garrido_(actor)" title="mario" target="_blank" onclick="redirWiki()">
+			<area shape= "circle" coords= "919,455,117" href=" https://es.wikipedia.org/wiki/Ana_Fern%C3%A1ndez_Garc%C3%ADa" target="_blank" onclick="redirWiki()">
+			<area shape= "poly" coords= "658,258,594,360,645,459,718,379" href=" https://es.wikipedia.org/wiki/Luis_Fern%C3%A1ndez_Est%C3%A9banez" target="_blank" onclick="redirWiki()">
+		</map>
+		
+		<br><br>
+				
+		<table>
+			<caption>Agenda telefónica</caption>
+			<tr>
+				<th>Local</th>
+				<th>#</th>
+			</tr>
+			<tr>
+				<td>A&B EPOVAC</td>
+				<td>3222</td>
+			</tr>
+			<tr>
+				<td>A&B INIM</td>
+				<td>3212</td>
+			</tr>
+			<tr>
+				<td>OT</td>
+				<td>3458</td>
+			</tr>
+		</table>
+		
+		
+		
+		<!--Formato		Citas
+			b			abbr
+			strong 		address
+			i			bdo
+			em			blockquote
+			small		cite
+			mark		q
+			del
+			ins
+			sub
+			sup	
+		-->
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
